@@ -21,7 +21,7 @@ library(dplyr)
 ```
 running example:
 ```sh
-computeQ(gene_expression,clinical_feature,"lymph")
+computeC(gene_expression,clinical_feature,"lymph")
 ```
 #### IV. Citaiton
 Please kindly cite the two repositories if you use the code, datasets or any results in this repo: </br>

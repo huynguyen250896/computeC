@@ -6,7 +6,7 @@ This repository is built to serve as a support tool for the paper "A workflow fo
 - gene_expression: the dataset include the rows are genes, the columns are the samples/patients, and each cell's value is expresison levels of genes.
 - clinical_feature: the dataset include the rows are the samples/patients, the columns are the three clinical features (i.e., lymph, npi and stage). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
 
-The example dataset can be found in [here](https://github.com/huynguyen250896/computeC/tree/master/Dataset)
+The example dataset can be found in [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset)
 #### III. Implementation
 Use the following command to install directly from GitHub;
 ```sh

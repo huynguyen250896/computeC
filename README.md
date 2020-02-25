@@ -14,7 +14,7 @@ devtools::install_github("huynguyen250896/computeQ")
 devtools::install_github("huynguyen250896/computeC")
 install.package("dplyr") #if needed
 ```
-Call the library if needed
+Call the library
 ```sh
 library(computeQ)
 library(computeC)

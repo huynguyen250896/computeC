@@ -29,7 +29,7 @@ Please kindly cite the two repositories if you use the code, datasets or any res
 ```sh
 Quang-Huy Nguyen. huynguyen250896/computeQ computeQ. (2020). doi:10.5281/zenodo.3686388
 ```
-</br> And
+</br> And </br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3686391.svg)](https://doi.org/10.5281/zenodo.3686391)
 ```sh
 Quang-Huy Nguyen. huynguyen250896/computeC: v 0.1.0. (2020). doi:10.5281/zenodo.3686391

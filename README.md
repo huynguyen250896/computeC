@@ -1,6 +1,6 @@
 
 #### I. Introduction
-This repository is built to serve as a support tool for the paper "A workflow for identification and analysis of driver genes: a case study in breast cancer". The package aims to compute automatically rapidly the correlation between genes and clinical features based on Spearman's rank correlation, and then compute Q-value based on the identified p-values. The Q-value is computed using the function computeQ by the package [computeQ](https://github.com/huynguyen250896/computeQ). </br>
+This repository is built to serve as a support tool for the paper "A workflow for identification and analysis of driver genes: a case study in breast cancer". The package aims to compute automatically rapidly the correlation between genes and clinical features based on Spearman's rank correlation, and then compute Q-value based on the identified p-values using the function computeQ by the package [computeQ](https://github.com/huynguyen250896/computeQ). </br>
 
 #### II. Dataset
 - gene_expression: the dataset include the rows are genes, the columns are the samples/patients, and each cell's value is expresison levels of genes.

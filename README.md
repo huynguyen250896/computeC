@@ -3,7 +3,7 @@
 This repository is built to serve as a support tool for the paper "A workflow for identification and analysis of driver genes: a case study in breast cancer". The package aims to compute automatically rapidly the correlation between genes and clinical features based on Spearman's rank correlation, and then compute Q-value based on the identified p-values using the function computeQ by the package [computeQ](https://github.com/huynguyen250896/computeQ). </br>
 
 #### II. Dataset
-- gene_expression: the dataset include the rows are genes, the columns are the samples/patients, and each cell's value is expresison levels of genes.
+- gene_expression: the dataset include the rows are the samples/patients, the columns are genes, and each cell's value is expresison levels of genes.
 - clinical_feature: the dataset include the rows are the samples/patients, the columns are the three clinical features (i.e., lymph, npi and stage). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
 
 The example dataset can be found in [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset)

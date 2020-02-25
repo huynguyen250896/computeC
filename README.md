@@ -28,11 +28,11 @@ computeC(gene_expression,clinical_feature,"lymph")
 Please kindly cite the two repositories if you use the code, datasets or any results in this repo: </br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3686388.svg)](https://doi.org/10.5281/zenodo.3686388)
 ```sh
-Quang-Huy Nguyen. huynguyen250896/computeQ computeQ. (2020). doi:10.5281/zenodo.3686388
+Quang-Huy Nguyen. huynguyen250896/computeQ: v 0.1.0. 2020;
 ```
 </br> And </br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3686391.svg)](https://doi.org/10.5281/zenodo.3686391)
 ```sh
-Quang-Huy Nguyen. huynguyen250896/computeC: v 0.1.0. (2020). doi:10.5281/zenodo.3686391
+Quang-Huy Nguyen. huynguyen250896/computeC: v 0.1.0. 2020;
 ```
 Feel free to contact [Quang-Huy Nguyen](https://github.com/huynguyen250896) <huynguyen96.dnu AT gmail DOT com> for any questions about the code and results.

@@ -7,14 +7,19 @@ This package is built to serve as a support tool for the paper "A workflow for i
 - clinical data: the data include the rows are the samples/patients, the columns are the three clinical features (e.g., lymph, npi and stage). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
 
 The example dataset can be found in [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset)
-#### III. Implementation
+
+#### III. Pipeline
+![Figure](https://imgur.com/undefined.png)
+Figure: Pipeline of the package computeC.
+
+#### IV. Implementation
 Use the following command to install directly from GitHub;
 ```sh
 devtools::install_github("huynguyen250896/computeQ")
 devtools::install_github("huynguyen250896/computeC")
 install.package("dplyr") #if needed
 ```
-Call the library
+Call the library;
 ```sh
 library(computeQ)
 library(computeC)
@@ -24,7 +29,7 @@ running example:
 ```sh
 computeC(gene_expression,clinical_feature,"lymph")
 ```
-#### IV. Citation
+#### V. Citation
 Please kindly cite the two repositories if you use the code, datasets or any results in this repo: </br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3686388.svg)](https://doi.org/10.5281/zenodo.3686388)
 ```sh

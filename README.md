@@ -4,7 +4,7 @@ This repository is built to serve as a support tool for the paper "A workflow fo
 
 #### II. Data Structure
 - gene expression data: the dataset include the rows are the samples/patients, the columns are genes, and each cell's value is expresison levels of genes.
-- clinical data: the dataset include the rows are the samples/patients, the columns are the three clinical features (i.e., lymph, npi and stage). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
+- clinical data: the dataset include the rows are the samples/patients, the columns are the three clinical features (e.g., lymph, npi and stage). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
 
 The example dataset can be found in [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset)
 #### III. Implementation

@@ -9,7 +9,7 @@ This package is built to serve as a support tool for the paper "A workflow for i
 The example dataset can be found in [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset)
 
 #### III. Pipeline
-![Figure](https://imgur.com/x2LsJIY.png)
+![Figure](https://imgur.com/nGdjtfj.png)
 Figure: Pipeline of the package computeC.
 
 #### IV. Implementation

@@ -17,7 +17,7 @@ Use the following command to install directly from GitHub;
 ```sh
 devtools::install_github("huynguyen250896/computeQ")
 devtools::install_github("huynguyen250896/computeC")
-install.package("dplyr") #if needed
+install.packages("dplyr") #if needed
 ```
 Call the library;
 ```sh

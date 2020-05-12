@@ -13,6 +13,8 @@
 computeC = function(data,var,x)
 {
   #library
+  devtools::install_github("huynguyen250896/computeQ")
+  library(computeQ)
   library(tidyr)
   library(tidyverse)
   library(dplyr)

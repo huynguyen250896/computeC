@@ -43,6 +43,7 @@ computeC = function(data,var,x)
     cc1$P.value[i]=cc$p.value
     rownames(cc1) = colnames(data)[1:ncol(data)]
   }
+  cc1 = cc1[,-1]
   cc1 = list(cc1 %>% subset(Estimate > 0),cc1 %>% subset(Estimate < 0)) # [1] cor coefficient > 0 - [2] cor coefficient <0
   order.pvalue1 = order(cc1[[1]]$P.value)
   order.pvalue2 = order(cc1[[2]]$P.value)

@@ -12,6 +12,25 @@
 
 computeC = function(data,var,x)
 {
+  #library
+  library(tidyr)
+  library(tidyverse)
+  library(dplyr)
+  
+  #missing input
+  if(missing(data)){
+    stop("Error: omics input is missing \n")
+  }
+
+  if(missing(var)){
+    stop("Error: clinical data is missing \n")
+  }
+
+  if(missing(x)){
+    stop("Error: clinical feature column in clinical data is missing \n")
+  }
+  
+  #implementation
   cc1 <- data.frame(name=paste("Site", 1:ncol(data)),Estimate=NA ,P.value=NA)
   estimates = numeric(ncol(data))
   pvalues = numeric(ncol(data))

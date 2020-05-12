@@ -23,7 +23,6 @@ Call the library;
 ```sh
 library(computeQ)
 library(computeC)
-library(dplyr) #if needed
 ```
 running example:
 ```sh

@@ -7,7 +7,7 @@
 computeC(
   expression levels of genes,
   clinical data,
-  the column name of clinical features of interest in the clinical data
+  the column name of clinical feature of interest in the clinical data
 )  
 }
 \description{

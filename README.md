@@ -1,6 +1,6 @@
 # computeC v0.1.0
 #### I. Introduction
-This package is built to serve as a support tool for the paper "A workflow for identification and analysis of driver genes: a case study in breast cancer". The package aims to compute automatically rapidly the correlation between individual genes and clinical features based on Spearman's rank correlation, and then compute Q-value (Benjamini-Hochberg procedure) using the function computeQ by the package [computeQ](https://github.com/huynguyen250896/computeQ) based on the previously identified p-values. </br> 
+This package is built to serve as a support tool for the paper "A workflow for identification and analysis of driver genes: a case study in breast cancer". The package aims to automatically rapidly compute the Spearman's Rank correlation coefficients between each of genes versus each of clinical features of interest, and then compute Q-value (Benjamini-Hochberg procedure) using the function computeQ for the package [computeQ](https://github.com/huynguyen250896/computeQ) based on the previously identified p-values. </br> 
 
 #### II. Data Structure
 - gene expression data: the data include the rows are the samples/patients, the columns are genes, and each cell's value is expression levels of genes.

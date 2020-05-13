@@ -2,16 +2,16 @@
 % Please edit documentation in R/geneCor.R
 \name{computeC}
 \alias{computeC}
-\title{Automatically compute the  correlation between genes and clinical features}
+\title{Automatically compute the Spearman's Rank correlation coefficients between each of genes versus each of clinical features}
 \usage{
 computeC(
-  gene_expression,
-  clinical_feature,
-  "lymph"
+  expression levels of genes,
+  clinical data,
+  the column name of clinical features of interest in the clinical data
 )  
 }
 \description{
-Automatically compute the  correlation between genes and clinical features. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
+Automatically compute the Spearman's Rank correlation coefficients between each of genes versus each of clinical features. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
 }
 \examples{
 computeC(gene_expression,clinical_feature,"lymph")

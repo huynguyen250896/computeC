@@ -28,7 +28,6 @@ computeC(gene_expression,clinical_feature,"lymph")
 ```
 #### V. Citation
 Please kindly cite the following paper if you use the code, datasets or any results in this repo: </br>
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3686388.svg)](https://doi.org/10.5281/zenodo.3686388)
 ```sh
 ...
 ```

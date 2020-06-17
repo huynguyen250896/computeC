@@ -7,7 +7,7 @@ You must preprare the two kinds of the following data: *gene_expresssion* and *c
 - gene_expression: the data include the rows are the samples/patients, the columns are genes, and each cell's value is expression levels of genes.
 - clinical_feature: the data include the rows are the samples/patients, the columns are the clinical features (e.g., lymph, npi, stage, etc.). lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively.
 
-Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp GeneSA's requirement on data structure.
+Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
 
 #### III. Pipeline
 ![Figure](https://imgur.com/iaGDUBS.png)

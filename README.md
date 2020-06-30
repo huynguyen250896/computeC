@@ -10,7 +10,7 @@ You must preprare the two kinds of the following data: *gene_expresssion* and *c
 Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
 
 #### III. Pipeline
-![Figure](https://imgur.com/iaGDUBS.png)
+![Figure](https://imgur.com/IbeMRhv.png)
 Figure: Pipeline of the package computeC.
 
 #### IV. Implementation

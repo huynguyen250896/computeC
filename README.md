@@ -11,7 +11,7 @@ Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/t
 
 #### III. Pipeline
 ![Figure](https://imgur.com/IbeMRhv.png)
-Figure: Pipeline of the package computeC.
+**Figure:** Pipeline of the package computeC.
 
 #### IV. Implementation
 Use the following command to install directly from GitHub;

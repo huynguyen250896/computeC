@@ -52,5 +52,4 @@ computeC = function(data,var,x)
   cc1 = cc1 %>% subset(Q.value <= 0.05) #only retain Genes with Q <=0.05
   cc1 = dplyr::select(cc1, -rank) #remove the 'rank' column
   cc1 = list(cc1 %>% subset(Estimate > 0),cc1 %>% subset(Estimate < 0)) # [1] cor coefficient > 0 - [2] cor coefficient <0
-  return(cc1)
-}
+  return(cc1)}

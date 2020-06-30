@@ -44,16 +44,13 @@ computeC = function(data,var,x)
     rownames(cc1) = colnames(data)[1:ncol(data)]
   }
   cc1 = cc1[,-1]
+  order.pvalue = order(cc1$P.value)
+  cc1 = cc1[order.pvalue,] #order rows following p-value
+  cc1$rank = rank(cc1$P.value) #re-order
+  cc1$Q.value = computeQ(cc1) #compute Q-value
+  cc1 = cc1 %>% subset(P.value <= 0.05) #only retain Genes with P <=0.05
+  cc1 = cc1 %>% subset(Q.value <= 0.05) #only retain Genes with Q <=0.05
+  cc1 = dplyr::select(cc1, -rank) #remove the 'rank' column
   cc1 = list(cc1 %>% subset(Estimate > 0),cc1 %>% subset(Estimate < 0)) # [1] cor coefficient > 0 - [2] cor coefficient <0
-  order.pvalue1 = order(cc1[[1]]$P.value)
-  order.pvalue2 = order(cc1[[2]]$P.value)
-  cc1[[1]] = cc1[[1]][order.pvalue1,] #order rows following p-value
-  cc1[[2]] = cc1[[2]][order.pvalue2,] #order rows following p-value
-  cc1[[1]]$rank = rank(cc1[[1]]$P.value) #re-order
-  cc1[[2]]$rank = rank(cc1[[2]]$P.value) #re-order
-  cc1[[1]]$Q.value = computeQ(cc1[[1]]) #compute Q-value
-  cc1[[2]]$Q.value = computeQ(cc1[[2]]) #compute Q-value
-  cc1[[1]] = cc1[[1]] %>% subset(Q.value <= 0.05) #only retain Genes with Q <=0.05
-  cc1[[2]] = cc1[[2]] %>% subset(Q.value <= 0.05) #only retain Genes with Q <=0.05
   return(cc1)
 }

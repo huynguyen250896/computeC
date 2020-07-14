@@ -27,7 +27,7 @@ running example:
 computeC(gene_expression,clinical_feature,"lymph")
 ```
 #### V. Citation
-Please kindly cite the following paper and star (and fork) this Github repository if you use the tool in this repo: </br>
+Please kindly cite the following paper and Star (and Fork, if can) this Github repository if you use the tool in this repo: </br>
 ```sh
 ...
 ```

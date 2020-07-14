@@ -4,7 +4,7 @@ This package is built to serve as a support tool for the paper "*An improved pro
 
 #### II. Data Structure
 You must preprare the two kinds of the following data: *gene_expresssion* and *clinical_feature* (see the 'IV.Implementation' section) 
-- gene_expression: the data include the rows are the samples/patients, the columns are genes, and each cell's value is expression levels of genes.
+- gene_expression: the data include the rows are the samples/patients, the columns are genes, and each cell's value is expression levels of genes (binary variable: 1 = over-expression, 0 = down-expression).
 - clinical_feature: the data include the rows are the samples/patients, the columns are the clinical features (e.g., lymph, npi, stage, etc..., in which, lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively).
 
 Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
@@ -27,7 +27,7 @@ running example:
 computeC(gene_expression,clinical_feature,"lymph")
 ```
 #### V. Citation
-Please kindly cite the following paper if you use the code, datasets or any results in this repo: </br>
+Please kindly cite the following paper and star (and fork) this Github repository if you use the tool in this repo: </br>
 ```sh
 ...
 ```

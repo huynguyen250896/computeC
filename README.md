@@ -24,7 +24,7 @@ library(computeC)
 ```
 running example:
 ```sh
-computeC(gene_expression,clinical_feature,"lymph", method = "")
+computeC(gene_expression,clinical_feature,"lymph", methodCC = "spearman")
 ```
 #### V. Citation
 Please kindly cite the following paper and Star (and Fork, if can) this Github repository if you use the tool in this repo: </br>

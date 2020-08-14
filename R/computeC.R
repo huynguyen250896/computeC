@@ -13,8 +13,6 @@
 computeC = function(data,var,x)
 {
   #library
-  devtools::install_github("huynguyen250896/computeQ")
-  library(computeQ)
   library(tidyr)
   library(tidyverse)
   library(dplyr)
@@ -30,6 +28,12 @@ computeC = function(data,var,x)
 
   if(missing(x)){
     stop("Error: clinical feature column in clinical data is missing \n")
+  }
+  
+  #define the computeQ function, adjusting the log-rank P-values following Benjamini-Hochberg FDR
+  computeQ <- function(x)
+  {
+  (x$P.value*nrow(x))/(x$rank)
   }
   
   #implementation

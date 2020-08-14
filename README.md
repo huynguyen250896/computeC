@@ -10,7 +10,7 @@ You must preprare the two kinds of the following data: *gene_expresssion* and *c
 Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
 
 #### III. Pipeline
-![Figure](https://imgur.com/IbeMRhv.png)
+![Figure](https://imgur.com/7XOxlHw.png)
 **Figure:** Pipeline of the package computeC.
 
 #### IV. Implementation
@@ -24,7 +24,9 @@ library(computeC)
 ```
 running example:
 ```sh
-computeC(gene_expression,clinical_feature,"lymph", methodCC = "spearman")
+computeC(gene_expression,clinical_feature,"lymph") #compute Spearman's Rank correlation coefficients (default values)
+computeC(gene_expression,clinical_feature,"lymph", methodCC = "pearson") #compute Pearson's correlation coefficients
+computeC(gene_expression,clinical_feature,"lymph", methodCC = "kendall") #compute Kendall's correlation coefficients
 ```
 #### V. Citation
 Please kindly cite the following paper and Star (and Fork, if can) this Github repository if you use the tool in this repo: </br>

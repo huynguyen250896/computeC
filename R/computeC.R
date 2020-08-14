@@ -10,7 +10,7 @@
 #'
 #' @export
 
-computeC = function(data,var,x)
+computeC = function(data,var,x, methodCC = "spearman")
 {
   #library
   library(tidyr)
@@ -37,13 +37,13 @@ computeC = function(data,var,x)
   }
   
   #implementation
-  cc1 <- data.frame(name=paste("Site", 1:ncol(data)),Estimate=NA ,P.value=NA)
+  cc1 <- data.frame(name=paste("Site", 1:ncol(data)),CC=NA ,P.value=NA)
   estimates = numeric(ncol(data))
   pvalues = numeric(ncol(data))
   for (i in c(1:ncol(data))) {
     cc=cor.test(data[,i],var[,x],
-                method = "spearman")
-    cc1$Estimate[i]=cc$estimate
+                method = methodCC)
+    cc1$CC[i]=cc$estimate
     cc1$P.value[i]=cc$p.value
     rownames(cc1) = colnames(data)[1:ncol(data)]
   }
@@ -55,5 +55,5 @@ computeC = function(data,var,x)
   cc1 = cc1 %>% subset(P.value <= 0.05) #only retain Genes with P <=0.05
   cc1 = cc1 %>% subset(Q.value <= 0.05) #only retain Genes with Q <=0.05
   cc1 = dplyr::select(cc1, -rank) #remove the 'rank' column
-  cc1 = list(cc1 %>% subset(Estimate > 0),cc1 %>% subset(Estimate < 0)) # [1] cor coefficient > 0 - [2] cor coefficient <0
+  cc1 = list(cc1 %>% subset(CC > 0),cc1 %>% subset(CC < 0)) # [1] cor coefficient > 0 - [2] cor coefficient <0
   return(cc1)}

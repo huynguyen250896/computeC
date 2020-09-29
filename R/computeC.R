@@ -1,6 +1,6 @@
 #' @title Automatically compute the  correlation between genes and clinical features
 #'
-#' @description Automatically compute the  correlation between genes and clinical features based on Spearman's rank
+#' @description Automatically analyze the correlation between individual genes and clinical features of interest
 #'
 #' @param data,var,x
 #'

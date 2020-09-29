@@ -24,7 +24,7 @@ library(computeC)
 ```
 running example:
 ```sh
-computeC(gene_expression,clinical_feature,"lymph") #compute Spearman's Rank correlation coefficients (default values)
+computeC(gene_expression,clinical_feature,"lymph") #compute Spearman's Rank correlation coefficients (default method)
 computeC(gene_expression,clinical_feature,"npi", methodCC = "pearson") #compute Pearson's correlation coefficients
 computeC(gene_expression,clinical_feature,"stage", methodCC = "kendall") #compute Kendall's correlation coefficients
 ```

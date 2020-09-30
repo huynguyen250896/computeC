@@ -1,10 +1,10 @@
 Package: computeC
 Type: Package
-Title: Automatically compute the  correlation between genes and clinical features
+Title: Automatically compute the correlation between individual genes and clinical features
 Version: 0.1.0
 Author: Quang-Huy Nguyen
 Maintainer: Quang-Huy Nguyen <huynguyen96.dnu@gmail.com>
-Description: Automatically compute the  correlation between genes and clinical features based on Spearman's rank
+Description: Automatically compute the correlation between individual genes and clinical features based on Spearman's rank
 License: MIT license
 Imports:
  dplyr

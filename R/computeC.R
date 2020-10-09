@@ -30,7 +30,7 @@ computeC = function(data,var,x, methodCC = "spearman")
     stop("Error: clinical feature column in clinical data is missing \n")
   }
   
-  #define the computeQ function, adjusting the log-rank P-values following Benjamini-Hochberg FDR
+  #define the computeQ function may adjust gained P-values following Benjamini-Hochberg FDR
   computeQ <- function(x)
   {
   (x$P.value*nrow(x))/(x$rank)

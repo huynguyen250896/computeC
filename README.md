@@ -39,7 +39,7 @@ computeC(gene_expression,clinical_feature,"stage", methodCC = "kendall") #comput
 
 #### VI. Citation
 ---
-Please kindly cite the following paper and Star (and Fork, if can) this Github repository if you use the tool in this repo: </br>
+Please kindly cite the following paper (and Star this Github repository if you find this tool of interest) if you use the tool in this repo: </br>
 ```sh
 ...
 ```

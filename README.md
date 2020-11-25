@@ -1,7 +1,7 @@
 # computeC v0.1.0
 #### I. Introduction
 ---
-This package is built to serve as a support tool for the paper "*Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data*". </br> The package aims to automatically rapidly compute correlation coefficients between each of genes versus each of clinical features of interest, and then adjust identified log-rank P-value following Benjamini-Hochberg FDR. </br> 
+This package is built to serve as a support tool for the paper "*[Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data](https://www.nature.com/articles/s41598-020-77318-1)*". </br> The package aims to automatically rapidly compute correlation coefficients between each of genes versus each of clinical features of interest, and then adjust identified log-rank P-value following Benjamini-Hochberg FDR. </br> 
 
 #### II. Data Structure
 ---
@@ -41,7 +41,18 @@ computeC(gene_expression,clinical_feature,"stage", methodCC = "kendall") #comput
 ---
 Please kindly cite the following paper (and Star this Github repository if you find this tool of interest) if you use the tool in this repo: </br>
 ```sh
-...
+Reference Type: Journal Article
+Author: Nguyen, Quang-Huy
+Le, Duc-Hau
+Year: 2020
+Title: Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data
+Journal: Scientific Reports
+Volume: 10
+Issue: 1
+Pages: 20521
+Date: 2020/11/25
+ISSN: 2045-2322
+DOI: 10.1038/s41598-020-77318-1
 ```
 
 Feel free to contact [Quang-Huy Nguyen](https://github.com/huynguyen250896) <huynguyen96.dnu AT gmail DOT com> for any questions about the code and results.

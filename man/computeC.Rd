@@ -2,7 +2,7 @@
 % Please edit documentation in R/computeC.R
 \name{computeC}
 \alias{computeC}
-\title{Automatically compute the Spearman's Rank correlation coefficients between each of genes versus each of clinical features}
+\title{Automatically compute correlation coefficients between each of genes versus each of clinical features}
 \usage{
 computeC(
   expression levels of genes,
@@ -11,7 +11,7 @@ computeC(
 )  
 }
 \description{
-Automatically compute the Spearman's Rank correlation coefficients between each of genes versus each of clinical features. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
+Automatically compute correlation coefficients between each of genes versus each of clinical features. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
 }
 \examples{
 computeC(gene_expression,clinical_feature,"lymph")

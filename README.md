@@ -6,8 +6,10 @@ This package is built to serve as a support tool for the paper "*[Improving exis
 #### II. Data Structure
 ---
 You must preprare the two kinds of the following data: *gene_expresssion* and *clinical_feature* (see the 'IV.Implementation' section) 
-- gene_expression: the data include the rows are the samples/patients, the columns are genes, and each cell's value is expression levels of genes. Alternatively, you can use DNA copy number alteration data or DNA methylation data or anything else.
-- clinical_feature: the data include the rows are the samples/patients, the columns are the clinical features (e.g., lymph, npi, stage, etc..., in which, lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively).
+- data: data frame or matrix. The data includes its rows are samples and its columns are genes.
+- clinical: data frame. The data includes its rows are samples and its columns are clinical features (e.g., lymph, npi, stage, etc..., in which, lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively). Note that samples are also included in rows of *data* and in the same order.
+- col: character. name of any columns in *clinical*. This must be a clinical feature that you are interest.
+- methodCC: character. correlation method. Allowed values are *spearman* (default), *pearson*, *kendall*.
 
 Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
 
@@ -28,9 +30,9 @@ library(computeC)
 ```
 running example:
 ```sh
-computeC(gene_expression,clinical_feature,"lymph") #compute Spearman's Rank correlation coefficients (default method)
-computeC(gene_expression,clinical_feature,"npi", methodCC = "pearson") #compute Pearson's correlation coefficients
-computeC(gene_expression,clinical_feature,"stage", methodCC = "kendall") #compute Kendall's correlation coefficients
+computeC(data = exp, clinical = cli, col = "lymph") #compute Spearman's Rank correlation coefficients (default method)
+computeC(data = exp, clinical = cli, col = "npi", methodCC = "pearson") #compute Pearson's correlation coefficients
+computeC(data = exp, clinical = cli, col = "stage", methodCC = "kendall") #compute Kendall's correlation coefficients
 ```
 
 #### V. What's new

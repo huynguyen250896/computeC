@@ -14,9 +14,12 @@ samples are also included in rows of \code{data} and in the same order.}
   
 \item{methodCC}{Correlation method type. Allowed values are \code{spearman} (default), \code{pearson},
 \code{kendall}.}
-\description{
-Automatically perform correlation analyses between individual genes and each clinical feature of your interest. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
 }
+
+\description{Automatically perform correlation analyses between individual genes and each clinical feature of your interest. 
+For further information on requirements as well as how to implement this tool, please visit my Github repository: 
+https://github.com/huynguyen250896/computeC.}
+
 \examples{
 computeC(data = exp, clinical = cli, col = "lymph")
 }

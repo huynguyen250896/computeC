@@ -2,17 +2,31 @@
 % Please edit documentation in R/computeC.R
 \name{computeC}
 \alias{computeC}
-\title{Automatically compute correlation coefficients between each of genes versus each of clinical features}
-\usage{
-computeC(
-  expression levels of genes,
-  clinical data,
-  the column name of clinical feature of interest in the clinical data
-)  
-}
+\title{Automatically perform correlation analyses between individual genes and each clinical feature of your interest}
+\usage{computeC(data,clinical,col, methodCC)}
+\arguments{
+\item{data}{data data frame or matrix. The data includes its rows are samples and its columns are genes.}
+
+\item{clinical}{data frame. The data includes its rows are samples and its columns are genes. Note that
+samples are also included in rows of \code{data} and in the same order.}
+
+\item{col}{character. name of any columns in \code{clinical}. This must be a clinical feature that you are interest.}  
+  
+\item{methodCC}{Correlation method type. Allowed values are \code{spearman} (default), \code{pearson},
+\code{kendall}.}
 \description{
-Automatically compute correlation coefficients between each of genes versus each of clinical features. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
+Automatically perform correlation analyses between individual genes and each clinical feature of your interest. For further information on requirements as well as how to implement this tool, please visit my Github repository: https://github.com/huynguyen250896/computeC
 }
 \examples{
-computeC(gene_expression,clinical_feature,"lymph")
+computeC(data = exp, clinical = cli, col = "lymph")
+}
+
+\references{
+Quang-Huy Nguyen, Duc-Hau Le. (2020). 
+Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data.
+Scientific Reports, 10(1):20521.
+}  
+  
+\author{
+Quang-Huy Nguyen
 }

@@ -4,8 +4,17 @@ Title: Automatically compute the correlation between individual genes and clinic
 Version: 0.1.0
 Author: Quang-Huy Nguyen
 Maintainer: Quang-Huy Nguyen <huynguyen96.dnu@gmail.com>
-Description: Automatically compute the correlation between individual genes and clinical features based on Spearman's rank
+Description: Automatically compute the correlation between individual genes and clinical features of your choice.
+    For further information on requirements as well as how to 
+    implement this tool, please visit my Github repository: 
+    https://github.com/huynguyen250896/computeC.
 License: MIT license
+Depends:
+    R (>= 3.5.0)
 Imports:
- dplyr
+ dplyr, tidyr, tidyverse
+Remotes: 
+    cran::dplyr,
+    cran::tidyr,
+    cran::tidyverse
 RoxygenNote: 7.0.0

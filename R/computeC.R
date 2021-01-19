@@ -10,7 +10,7 @@
 #'
 #' @param data data frame or matrix. The data includes its rows are samples and its columns are genes.
 #'
-#' @param clinical data frame. The data includes its rows are samples and its columns are genes. Note that
+#' @param clinical data frame. The data includes its rows are samples and its columns are clinical features. Note that
 #' samples are also included in rows of \code{data} and in the same order.
 #'
 #' @param col character. name of any columns in \code{clinical}. This must be a clinical feature that you are interest.

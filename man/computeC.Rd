@@ -5,7 +5,7 @@
 \title{Automatically perform correlation analyses between individual genes and each clinical feature of your interest}
 \usage{computeC(data,clinical,col, methodCC)}
 \arguments{
-\item{data}{data data frame or matrix. The data includes its rows are samples and its columns are genes.}
+\item{data}{data frame or matrix. The data includes its rows are samples and its columns are genes.}
 
 \item{clinical}{data frame. The data includes its rows are samples and its columns are clinical features. Note that
 samples are also included in rows of \code{data} and in the same order.}

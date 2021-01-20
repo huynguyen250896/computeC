@@ -15,8 +15,7 @@
 #'
 #' @param col character. name of any columns in \code{clinical}. This must be a clinical feature that you are interest.
 #'
-#' @param methodCC character. correlation method. This must be a clinical feature that you are interest. Allowed values 
-#' are \code{spearman} (default), \code{pearson}, \code{kendall}.
+#' @param methodCC character. correlation method. Allowed values are \code{spearman} (default), \code{pearson}, \code{kendall}.
 #'
 #' @return NULL
 #'

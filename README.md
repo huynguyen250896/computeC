@@ -3,13 +3,16 @@
 ---
 This package is built to serve as a support tool for the paper "*[Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data](https://www.nature.com/articles/s41598-020-77318-1)*". </br> The package aims to automatically rapidly compute correlation coefficients between each of genes versus each of clinical features of interest, and then adjust identified log-rank P-value following Benjamini-Hochberg FDR. </br> 
 
-#### II. Data Structure
+#### II. Understanding the tool
 ---
-You must preprare the two kinds of the following data: *gene_expresssion* and *clinical_feature* (see the 'IV.Implementation' section) 
-- data: data frame or matrix. The data includes its rows are samples and its columns are genes.
-- clinical: data frame. The data includes its rows are samples and its columns are clinical features (e.g., lymph, npi, stage, etc..., in which, lymph, npi, and stage denote numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively). Note that samples are also included in rows of *data* and in the same order.
-- col: character. name of any columns in *clinical*. This must be a clinical feature that you are interest.
-- methodCC: character. correlation method. Allowed values are *spearman* (default), *pearson*, *kendall*.
+The following are parameters provided by computeC:
+- data: data frame or matrix. The `data` includes its rows are samples and its columns are genes.
+
+- clinical: data frame. The data includes its rows are samples and its columns are clinical features (e.g., numbers of positive lymph nodes, the Nottingham prognostic index, and tumour stage, respectively). Note that samples are also included in rows of `data` and in the same order.
+
+- col: character. name of any columns in `clinical`. This must be a clinical feature that you are interest.
+
+- methodCC: character. correlation method. Allowed values are `spearman` (default), `pearson`, `kendall`.
 
 Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
 

@@ -2,17 +2,17 @@
 % Please edit documentation in R/computeC.R
 \name{computeC}
 \alias{computeC}
-\title{Automatically perform correlation analyses between individual genes and each clinical feature of your interest}
+\title{computeC: perform correlation analyses between individual genes and each clinical feature of your interest}
 \usage{computeC(data,clinical,col, methodCC)}
 \arguments{
-\item{data}{data frame or matrix. The data includes its rows are samples and its columns are genes.}
+\item{data}{data frame or matrix. The data represents its rows are samples and its columns are genomic features.}
 
-\item{clinical}{data frame. The data includes its rows are samples and its columns are clinical features. Note that
+\item{clinical}{data frame. The data represents its rows are samples and its columns are clinical features. Note that
 samples are also included in rows of \code{data} and in the same order.}
 
-\item{col}{character. name of any columns in \code{clinical}. This must be a clinical feature that you are interest.}  
+\item{col}{character. Name of any columns in \code{clinical}. This must be a clinical feature that you are interest.}  
   
-\item{methodCC}{Correlation method type. Allowed values are \code{spearman} (default), \code{pearson},
+\item{methodCC}{Correlation method. Allowed values are \code{spearman} (default), \code{pearson},
 \code{kendall}.}
 }
 
@@ -22,9 +22,11 @@ https://github.com/huynguyen250896/computeC.}
 
 \examples{
 computeC(data = exp, clinical = cli, col = "lymph")
+#data = exp => gene expression
+#col = "lymph" => association between the expression levels of each gene versus the number of lymph nodes of breast cancer
 }
 
-\citation{
+\references{
 Quang-Huy Nguyen, Duc-Hau Le. (2020). 
 Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data.
 Scientific Reports, 10(1):20521.

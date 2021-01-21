@@ -24,7 +24,7 @@ https://github.com/huynguyen250896/computeC.}
 computeC(data = exp, clinical = cli, col = "lymph")
 }
 
-\references{
+\citation{
 Quang-Huy Nguyen, Duc-Hau Le. (2020). 
 Improving existing analysis pipeline to identify and analyze cancer driver genes using multi-omics data.
 Scientific Reports, 10(1):20521.

@@ -23,7 +23,8 @@ https://github.com/huynguyen250896/computeC.}
 \examples{
 computeC(data = exp, clinical = cli, col = "lymph")
 #data = exp => gene expression
-#col = "lymph" => association between the expression levels of each gene versus the number of lymph nodes of breast cancer
+#col = "lymph" => association between the expression levels of each gene 
+#versus the number of lymph nodes of breast cancer patients.
 }
 
 \references{

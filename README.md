@@ -14,7 +14,7 @@ The following are parameters provided by computeC:
 
 - methodCC: character. correlation method. Allowed values are `spearman` (default), `pearson`, `kendall`.
 
-Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure.
+Please download datasets [Dataset](https://github.com/huynguyen250896/computeC/tree/master/Dataset) as examples to well grasp computeC's requirement on data structure and its usage.
 
 #### III. Pipeline
 ---

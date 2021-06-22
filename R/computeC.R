@@ -43,7 +43,7 @@ computeC = function(data,clinical,col, methodCC = "spearman")
     stop("Error: clinical feature column in clinical data is missing. \n")
   }
   
-  if(!(col %in% colnames(cli))){
+  if(!(col %in% colnames(clinical))){
     stop("Error: clinical feature being selected is not included in any columns of clinical data. \n")
   }
   
